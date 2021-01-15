@@ -134,3 +134,59 @@ main {
 #bar {
   display: block;
 }
+
+#sidemenu {
+  display: none;
+  font-size: 150%;
+  font-style: none;
+  text-decoration: none;
+  background-color: #eaeaea;
+  grid-area: bn;
+  height
+}
+
+#sidemenu a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width: 500px) {
+
+  body {
+    display: grid;
+    grid-template-columns:33% auto 33%;
+    grid-template-rows: 7em 11em auto;
+    grid-template-areas:
+    "header header header"
+    "bn middle ."
+    ". . . ";
+    font-size: 90%;
+  }
+  #bar{
+    display: none;
+  }
+
+  h3 {
+    display: none;
+  }
+
+  #sidemenu {
+    display: block;
+    background-color: #eaeaea;
+    text-align: center;
+  }
+
+  #sidemenu a:hover {
+    color: grey;
+  }
+
+  main {
+    grid-area: middle;
+}
+
+  textarea {
+    display: none;
+  }
+  header {
+    border: 0em;
+}
