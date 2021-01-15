@@ -3,6 +3,7 @@
   <head>
     <title>Portfolio</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="contact-css.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,22 +16,31 @@
   <body>
 
     <nav>
-      <a href="cv.html#">CV</a>
-      <a href="portfolio.html#">Portfolio</a>
-      <a href="index.html#">Home</a>
-      <a href="sitereport.html#">Experience</a>
-      <a href="contact.html#">Contact</a>
+      <div id = bar>
+        <a id = leftend href="cv.html#">CV</a>
+        <a href="portfolio.html#">Portfolio</a>
+        <a href="index.html#">Home</a>
+        <a href="sitereport.html#">Experience</a>
+        <a class = current id = rightend href="contact.html#">Contact</a>
+      </div>
     </nav>
+    <div id = sidemenu>
+      <a id = leftend href="cv.html#">CV Page</a>
+      <a href="portfolio.html#">Portfolio Page</a>
+      <a href="index.html#">Home Page</a>
+      <a href="sitereport.html#">Experience</a>
+      <a id = rightend href="contact.html#">Contact Page</a>
+    </div>
 
     <main>
-      <div>
-        <h1>You want to contact me? Great! </h1>
+      <div class = pg>
+        <h1 class = title>You want to contact me? Great! </h1>
         <h2>Email<br> harrison.mcnulty@hotmail.com</h2>
         <h2>Mobile<br> +44 7539484561</h2>
         <h2>Instagram<br> h.arrison18</h2>
         <h3>Weekdays after 8pm or Saturdays after 7pm</h3>
-        <h3>Or let me contact you</h1>
-        <textarea >email</textarea>
+        <h3 class = title>Or let me contact you</h1>
+        <textarea id=contact>email</textarea>
       </div>
     </main>
 
